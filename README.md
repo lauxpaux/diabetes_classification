@@ -35,8 +35,7 @@ We'll be using the other columns to predict feature 9: Diabetes diagnoses (0, 1)
 
 
 ## Conclusion:
-<img width="393" alt="image" src="https://user-images.githubusercontent.com/40530704/232136427-4648dc57-e2ce-4a3e-a1e3-e2d1005612ac.png">
-
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/40530704/232136579-db761d30-da32-4ba2-aec4-2e24335a8613.png">
 As shown in the confusion matrix, and classification report above, we managed to increase recall from 80% to 95%, while keeping precision for positive cases at around 84%, and the f1-score at 85%. As we mentioned earlier, our goal was to aim for a higher recall for harm reduction, even if it meant losing a little bit of precision.
 
 What this means for our project is that our model has gotten better at identifying positive diabetic patients in the whole dataset, even if those positive classifications weren't all true positive (diabetic) patients. We would rather have a few patients turn out to not be diabetic, than have a higher number of patients believe that they don't have diabetes when they in fact do.
