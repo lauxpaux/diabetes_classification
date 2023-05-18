@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "diabetes classification"
+version = "0.1.0"
+description = "A research project to identify the best model to classify diabetes outcomes"
+authors = ["lauxpaux <laurapaulino925@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scikit-learn = "^1.2.2"
+numpy = "^1.24.3"
+seaborn = "^0.12.2"
+matplotlib = "^3.7.1"
+pathlib = "^1.0.1"
+path = "^16.6.0"
+cycler = "^0.11.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
