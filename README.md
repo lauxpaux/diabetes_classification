@@ -1,7 +1,17 @@
 # Diabetes Classification
 
-## Processes and tools:
-* Exploratory data analysis: Notebook documenting variable correlations and processes that lead to data processing functions in [process_data.py](https://github.com/lauxpaux/diabetes_classification/blob/main/process_data.py) file.
+## Tools:
+* Python
+* Pandas
+* Numpy
+* Scikit-Learn
+* Seaborn
+* Matplotlib
+
+*Installation requirements declared in [pyproject.toml](https://github.com/lauxpaux/diabetes_classification/blob/main/pyproject.toml) file.*
+
+## Processes:
+* The exploratory data analysis notebook documents the process of analyzing the data, exploring variable correlations and the cleaning processes that lead to data processing functions in the [process_data.py](https://github.com/lauxpaux/diabetes_classification/blob/main/process_data.py) file.
 
 ## Models: 
 * [K Nearest Neighbor](https://github.com/lauxpaux/diabetes_classification/blob/main/01-k-nearest-neighbors.py.ipynb)
@@ -56,7 +66,7 @@ If we revisit the distribution of our two classes, we can see that there were a 
 
 ![image](https://github.com/lauxpaux/diabetes_classification/assets/40530704/84e4b6f2-86d7-46a1-b3aa-e9e83e77d65c)
 
-## Shortcomings & future improvemtns:
+## Improvements:
 
 The biggest shortcoming for this project is its data simplicity. In order to research diabetes and build a good classification model, we need a lot of robust data sourced from a reliable source, for my research purposes ideally representing minority women patients from the United States. Further work in this project would start with allocating better quality data. 
 
