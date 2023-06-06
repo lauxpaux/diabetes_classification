@@ -58,7 +58,7 @@ If we revisit the distribution of our two classes, we can see that there were a 
 
 ## Shortcomings & future improvemtns:
 
-The biggest shortcoming for this project is its data simplicity. In order to research the and build a model a good classification, we need a lot of robust data sourced from a reliable source, ideally from the United States. Further work in this project would start with allocating better quality data. 
+The biggest shortcoming for this project is its data simplicity. In order to research diabetes and build a good classification model, we need a lot of robust data sourced from a reliable source, for my research purposes ideally representing minority women patients from the United States. Further work in this project would start with allocating better quality data. 
 
 ## Run project: 
 ```
