@@ -1,6 +1,16 @@
-## In progress...
-
 # Diabetes Classification
+
+## Processes and tools:
+* Exploratory data analysis: Notebook documenting variable correlations and processes that lead to data processing functions
+
+## Models: 
+* K Nearest Neighbor: https://github.com/lauxpaux/diabetes_classification/blob/main/01-k-nearest-neighbors.py.ipynb
+* Support Vector Classifer: https://github.com/lauxpaux/diabetes_classification/blob/main/02-support-vector-classification.py.ipynb
+* Decision Tree Classifier: https://github.com/lauxpaux/diabetes_classification/blob/main/03-decision-tree-classifier.py.ipynb
+* Random Forest Classifier: https://github.com/lauxpaux/diabetes_classification/blob/main/04-random-forest-classifier.py.ipynb
+* Logistic Regression Classifier: https://github.com/lauxpaux/diabetes_classification/blob/main/05-logistic-regression-classifier.py.ipynb
+
+
 
 ## Motivations:
 Diabetes is a chronic disease that interferes with the body's ability to digest sugar, causing sugar levels to build up in the blood stream. When left untreated, a build up of sugar in the blood stream can cause blockage in the arteries, block bloodflow to the extremities, and eyes. Further complications from the blockages may cause heart disease/heart attacks, loss of extremities and/or vision loss.
