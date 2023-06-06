@@ -32,7 +32,7 @@ Type 2: Happens to predominantly adult patients, onset from lifestyle habits suc
 Gestational: Occurs when women aren't able to produce enough insulin during pregnancy.
 To prevent complications from diabetes, patients must monitor sugar levels in the blood through bi/annual or annual A1C tests and daily pricks, adapt better diet and lifestyle habits to manage weight, and use the hormone insulin to digest sugar if their bodies stop producing it or don't produce enough.
 
-**Why is this a problem?**
+**Why is this a problem?**\n
 Currently, diabetes affects 37 million people a year, and costs the US $327 million dollars in healthcare costs, and loss of time costs. In addition, Diabetes is the 7th leading cause of death in the United States and it could become an even bigger problem as obesity rates increase. Diabetes can be difficult to manage but it is not impossible.
 
 How can this project help? This project uses healthcare data to train models to classify diabetes outcome in patients based on other health outcomes. In many healthcare settings, existing patient data can be used to help prioritize at-risk patients with the preventative care that they need. For example, patients that the model identifies as diabetic can be given priority lab appointments to confirm their A1Cs, or have priority for nutritional counceling appointments.
