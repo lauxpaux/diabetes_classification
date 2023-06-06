@@ -1,14 +1,14 @@
 # Diabetes Classification
 
 ## Processes and tools:
-* Exploratory data analysis: Notebook documenting variable correlations and processes that lead to data processing functions
+* Exploratory data analysis: Notebook documenting variable correlations and processes that lead to data processing functions in [process_data.py](https://github.com/lauxpaux/diabetes_classification/blob/main/process_data.py) file.
 
 ## Models: 
-* [K Nearest Neighbor:](https://github.com/lauxpaux/diabetes_classification/blob/main/01-k-nearest-neighbors.py.ipynb)
-* [Support Vector Classifer:](https://github.com/lauxpaux/diabetes_classification/blob/main/02-support-vector-classification.py.ipynb)
-* [Decision Tree Classifier:](https://github.com/lauxpaux/diabetes_classification/blob/main/03-decision-tree-classifier.py.ipynb)
-* [Random Forest Classifier:](https://github.com/lauxpaux/diabetes_classification/blob/main/04-random-forest-classifier.py.ipynb)
-* [Logistic Regression Classifier:](https://github.com/lauxpaux/diabetes_classification/blob/main/05-logistic-regression-classifier.py.ipynb)
+* [K Nearest Neighbor](https://github.com/lauxpaux/diabetes_classification/blob/main/01-k-nearest-neighbors.py.ipynb)
+* [Support Vector Classifer](https://github.com/lauxpaux/diabetes_classification/blob/main/02-support-vector-classification.py.ipynb)
+* [Decision Tree Classifier](https://github.com/lauxpaux/diabetes_classification/blob/main/03-decision-tree-classifier.py.ipynb)
+* [Random Forest Classifier](https://github.com/lauxpaux/diabetes_classification/blob/main/04-random-forest-classifier.py.ipynb)
+* [Logistic Regression Classifier](https://github.com/lauxpaux/diabetes_classification/blob/main/05-logistic-regression-classifier.py.ipynb)
 
 
 
@@ -22,9 +22,10 @@ Type 2: Happens to predominantly adult patients, onset from lifestyle habits suc
 Gestational: Occurs when women aren't able to produce enough insulin during pregnancy.
 To prevent complications from diabetes, patients must monitor sugar levels in the blood through bi/annual or annual A1C tests and daily pricks, adapt better diet and lifestyle habits to manage weight, and use the hormone insulin to digest sugar if their bodies stop producing it or don't produce enough.
 
-Why is this a problem? Currently, diabetes affects 37 million people a year, and costs the US $327 million dollars in healthcare costs, and loss of time costs. In addition, Diabetes is the 7th leading cause of death in the United States and it could become an even bigger problem as obesity rates increase. Diabetes can be difficult to manage but it is not impossible.
+**Why is this a problem?**
+Currently, diabetes affects 37 million people a year, and costs the US $327 million dollars in healthcare costs, and loss of time costs. In addition, Diabetes is the 7th leading cause of death in the United States and it could become an even bigger problem as obesity rates increase. Diabetes can be difficult to manage but it is not impossible.
 
-How can this project help? This project uses healthcare data to train a KNN model to classify diabetes outcome in patients based on other health outcomes. In many healthcare settings, existing patient data can be used to help prioritize at-risk patients with the preventative care that they need. For example, patients that the model identifies as diabetic can be given priority lab appointments to confirm their A1Cs, or have priority for nutritional counceling appointments.
+How can this project help? This project uses healthcare data to train models to classify diabetes outcome in patients based on other health outcomes. In many healthcare settings, existing patient data can be used to help prioritize at-risk patients with the preventative care that they need. For example, patients that the model identifies as diabetic can be given priority lab appointments to confirm their A1Cs, or have priority for nutritional counceling appointments.
 
 ## Data:
 The dataset for this project was obtained from Kaggle. It was sourced from the National Institute of Diabetes and Digestive and Kidney Diseases, and it consists of female patients that are 21 years or older and of Pima Indian descent.
@@ -48,14 +49,21 @@ We'll be using the other columns to predict feature 9: Diabetes diagnoses (0, 1)
 
 ## Conclusion:
 <img width="393" alt="image" src="https://user-images.githubusercontent.com/40530704/232136579-db761d30-da32-4ba2-aec4-2e24335a8613.png">
-As shown in the confusion matrix, and classification report above, we managed to increase recall from 80% to 95%, while keeping precision for positive cases at around 84%, and the f1-score at 85%. As we mentioned earlier, our goal was to aim for a higher recall for harm reduction, even if it meant losing a little bit of precision.
 
-What this means for our project is that our model has gotten better at identifying positive diabetic patients in the whole dataset, even if those positive classifications weren't all true positive (diabetic) patients. We would rather have a few patients turn out to not be diabetic, than have a higher number of patients believe that they don't have diabetes when they in fact do.
+Our initial goal was to create a model that performed well at classifying positive diabetes cases. As we can see, all of our models performed better at detecting patients who did not have diabetes (those in class 0).
 
-We have succesfully achieved our goal of building a model that can help us identify diabetic patients!
+If we revisit the distribution of our two classes, we can see that there were a lot more rows consisting of patients who did not have diabetes vs those who did, meaning that our model had better data/information on patients who did not have diabetes.
 
-This concludes our Diabetes Classification with KNN project. Some of the ways that we can expand on this project are:
+![image](https://github.com/lauxpaux/diabetes_classification/assets/40530704/84e4b6f2-86d7-46a1-b3aa-e9e83e77d65c)
 
-Finding or sourcing data on different health outcomes for women in the United States, to broaden patient outreach and model usability.
-Further analysis into the 3 different types of diabetes, including measuring our model's ability to predict based on Type 1, Type 2 and Gestational diabetes.
-Evaluate patient outcomes for children of women who had gestational diabetes thus incorporating family history into the dataset somehow. Are individuals born to mothers who had gestational diabetes more likely to develop Type 1, or Type 2 diabetes in their lifetime?
+## Shortcomings & future improvemtns:
+
+The biggest shortcoming for this project is its data simplicity. In order to research the and build a model a good classification, we need a lot of robust data sourced from a reliable source, ideally from the United States. Further work in this project would start with allocating better quality data. 
+
+## Run project: 
+```
+cd <your desired directory>
+git clone <repository link>
+poetry install
+jupyter notebooks
+```
