@@ -58,8 +58,7 @@ We'll be using the other columns to predict feature 9: Diabetes diagnoses (0, 1)
 
 
 ## Conclusion:
-<img width="393" alt="image" src="https://user-images.githubusercontent.com/40530704/232136579-db761d30-da32-4ba2-aec4-2e24335a8613.png">
-
+<img width="459" alt="image" src="https://github.com/lauxpaux/diabetes_classification/assets/40530704/5151ba34-d54e-40ee-804c-ca78e0e0d7f6">
 Our initial goal was to create a model that performed well at classifying positive diabetes cases. As we can see, all of our models performed better at detecting patients who did not have diabetes (those in class 0).
 
 If we revisit the distribution of our two classes, we can see that there were a lot more rows consisting of patients who did not have diabetes vs those who did, meaning that our model had better data/information on patients who did not have diabetes.
