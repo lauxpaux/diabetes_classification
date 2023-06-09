@@ -58,6 +58,7 @@ We'll be using the other columns to predict feature 9: Diabetes diagnoses (0, 1)
 
 
 ## Conclusion:
+The best performing model that we experimented with in this project was KNN with a k value set to 18. The classification report:
 <img width="459" alt="image" src="https://github.com/lauxpaux/diabetes_classification/assets/40530704/5151ba34-d54e-40ee-804c-ca78e0e0d7f6"> <br>
 
 Our initial goal was to create a model that performed well at classifying positive diabetes cases. As we can see, all of our models performed better at detecting patients who did not have diabetes (those in class 0).
@@ -68,7 +69,7 @@ If we revisit the distribution of our two classes, we can see that there were a 
 
 ## Improvements:
 
-The biggest shortcoming for this project is its data simplicity. In order to research diabetes and build a good classification model, we need a lot of robust data sourced from a reliable source, for my research purposes ideally representing minority women patients from the United States. Further work in this project would start with allocating better quality data. 
+The biggest shortcoming for this project is its data simplicity. In order to research diabetes and build a good classification model, we need a lot of robust data sourced from a reliable source, for my research purposes ideally representing minority women patients from the United States. Therefore, further work in this project would start with allocating better quality and higher quantity data. 
 
 ## Run project: 
 ```
