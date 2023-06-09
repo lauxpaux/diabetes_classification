@@ -73,7 +73,7 @@ The biggest shortcoming for this project is its data simplicity. In order to res
 
 ## Run project: 
 ```
-cd <your desired directory>
+cd <directory>
 git clone <repository link>
 poetry install
 jupyter notebooks
